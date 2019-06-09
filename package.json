@@ -1,0 +1,35 @@
+{
+  "name": "uploader-react-express",
+  "version": "0.0.1",
+  "description": "Simple image uploader with preview before uploading to server",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "serve": "nodemon server/index.js",
+    "client": "yarn --cwd client start",
+    "dev": "concurrently \"yarn run serve\" \"yarn run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petarnonkovic/uploader-react-express.git"
+  },
+  "keywords": [],
+  "author": "petar <petar.non@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/petarnonkovic/uploader-react-express/issues"
+  },
+  "homepage": "https://github.com/petarnonkovic/uploader-react-express#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.4",
+    "fs-extra": "^8.0.1",
+    "morgan": "^1.9.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

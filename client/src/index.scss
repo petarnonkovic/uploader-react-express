@@ -1,0 +1,78 @@
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.App {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    min-height: 100vh;
+
+    main {
+        flex: 1 0 auto;
+    }
+}
+
+.main-content .preview {
+    min-height: 240px;
+    justify-content: center;
+
+    > p {
+        font-size: 1.7rem;
+        color: rgba(153, 169, 177, 0.8);
+        padding: 75px 50px;
+        border: 2px solid rgba(153, 169, 177, 0.8);
+        border-radius: 4px;
+    }
+}
+
+.alert {
+    position: relative;
+
+    .close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: transparent;
+        border: none;
+        font-weight: bolder;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            background-color: transparent;
+        }
+    }
+
+    &.alert-danger {
+        background-color: rgba(255, 82, 82, 0.5);
+        color: rgb(183, 28, 28);
+
+        > button {
+            color: rgb(183, 28, 28);
+        }
+    }
+
+    &.alert-success {
+        background-color: rgba(129, 199, 132, 0.5);
+        color: rgb(0, 77, 64);
+
+        > button {
+            color: rgb(0, 77, 64);
+        }
+    }
+}
+
+.gallery-item img.img-responsive {
+    max-width: 100%;
+}
